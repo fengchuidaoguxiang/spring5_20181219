@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring5_proxy_jdk/Spring5_proxy_jdk.iml" filepath="$PROJECT_DIR$/Spring5_proxy_jdk/Spring5_proxy_jdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/experment/experment.iml" filepath="$PROJECT_DIR$/experment/experment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring5.iml" filepath="$PROJECT_DIR$/spring5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_DI/spring_DI.iml" filepath="$PROJECT_DIR$/spring_DI/spring_DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_IoC/spring_IoC.iml" filepath="$PROJECT_DIR$/spring_IoC/spring_IoC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_annotation/spring_annotation.iml" filepath="$PROJECT_DIR$/spring_annotation/spring_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" filepath="$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" />
+    </modules>
+  </component>
+</project>

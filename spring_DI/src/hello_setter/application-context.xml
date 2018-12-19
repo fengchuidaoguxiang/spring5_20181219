@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--sette方法注入，注入原始数据类型-->
+    <bean id="employee1" class="hello_setter.Employee1">
+        <property name="name" value="Lucy" />
+        <property name="age" value="19"  />
+        <property name="salary" value="800"/>
+    </bean>
+    <!--setter方法注入：注入引用类型(对象类型)-->
+    <bean id="cat2" class="hello_setter.Cat1"/>
+    <bean id="person1" class="hello_setter.Person1">
+        <property name="c1" ref="cat2"/>
+    </bean>
+    <bean id="collection1" class="hello_setter.CollectionBean1">
+        <!--Set类型-->
+        <property name="set1" >
+            <set>
+                <value>hello</value>
+                <value>tom</value>
+            </set>
+        </property>
+        <!--List类型-->
+        <property name="list1">
+            <list>
+                <value>listvalue1</value>
+                <value>listvalue2</value>
+            </list>
+        </property>
+        <property name="arrays1">
+            <array>
+                <value>arrayvalue1</value>
+                <value>arrayvalue2</value>
+            </array>
+        </property>
+        <!--Map类型（字典类型）-->
+        <property name="map1">
+            <map>
+                <entry key="key1" value="value1"/>
+                <entry key="key2" value="value2"/>
+            </map>
+        </property>
+        <!--Properties类型-->
+        <!--<property name="prop1">-->
+            <!--<props>-->
+                <!--<prop key="k1">v1</prop>-->
+                <!--<prop key="k2">v2</prop>-->
+            <!--</props>-->
+        <!--</property>-->
+        <property name="prop1">
+            <value>
+                k1=v1
+                k2=v2
+                k4=v4
+            </value>
+        </property>
+    </bean>
+</beans>

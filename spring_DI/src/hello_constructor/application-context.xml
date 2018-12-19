@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--构造方法注入，注入原始数据类型-->
+    <bean id="employee2" class="hello_constructor.Employe2">
+        <constructor-arg name="name" value="tom"/>
+        <constructor-arg name="age" value="19"/>
+        <constructor-arg name="salary" >
+            <null/>
+        </constructor-arg>
+    </bean>
+    <!--构造方法注入：注入引用类型(对象类型)-->
+    <!--<bean id="cat2" class="hello_constructor.Cat2" scope="prototype"/>-->
+    <!--<bean id="Person2" class="hello_constructor.Person2">-->
+        <!--<constructor-arg name="c2" ref="cat2"/>-->
+    <!--</bean>-->
+    <bean id="Person2" class="hello_constructor.Person2">
+        <constructor-arg name="c2">
+            <bean id="cat2" class="hello_constructor.Cat2"/>
+        </constructor-arg>
+    </bean>
+
+
+
+    <!--构造方法注入：注入集合类型-->
+    <bean id="collectionBean2" class="hello_constructor.CollectionBean2">
+        <constructor-arg name="set2">
+            <set>
+                <value>set1</value>
+                <value>set2</value>
+            </set>
+        </constructor-arg>
+        <constructor-arg name="list2">
+            <list>
+                <value>list1</value>
+                <value>list2</value>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="map2">
+            <map>
+                <entry key="key1" value="value1"/>
+                <entry key="key2" value="value2"/>
+            </map>
+        </constructor-arg>
+        <constructor-arg>
+            <array>
+                <value>array1</value>
+                <value>array2</value>
+            </array>
+        </constructor-arg>
+        <constructor-arg name="prop2">
+            <value>
+                p1=v1
+                p2=v2
+            </value>
+        </constructor-arg>
+    </bean>
+</beans>
