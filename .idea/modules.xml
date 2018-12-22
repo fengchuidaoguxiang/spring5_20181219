@@ -8,7 +8,11 @@
       <module fileurl="file://$PROJECT_DIR$/spring_DI/spring_DI.iml" filepath="$PROJECT_DIR$/spring_DI/spring_DI.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_IoC/spring_IoC.iml" filepath="$PROJECT_DIR$/spring_IoC/spring_IoC.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_annotation/spring_annotation.iml" filepath="$PROJECT_DIR$/spring_annotation/spring_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_annotation_review/spring_annotation_review.iml" filepath="$PROJECT_DIR$/spring_annotation_review/spring_annotation_review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_proxy_jdk2/spring_proxy_jdk2.iml" filepath="$PROJECT_DIR$/spring_proxy_jdk2/spring_proxy_jdk2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_proxy_principle/spring_proxy_principle.iml" filepath="$PROJECT_DIR$/spring_proxy_principle/spring_proxy_principle.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" filepath="$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_proxy_static2/spring_proxy_static2.iml" filepath="$PROJECT_DIR$/spring_proxy_static2/spring_proxy_static2.iml" />
     </modules>
   </component>
 </project>

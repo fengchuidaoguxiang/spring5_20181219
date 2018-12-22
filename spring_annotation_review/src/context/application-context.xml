@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:property-placeholder location="classpath:db.properties"/>
+    <context:annotation-config/>
+    <context:component-scan base-package="dao,service,controller,context"/>
+    <bean id="mydatasource1" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${db.driverClassName}"/>
+        <property name="url" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+        <property name="initialSize" value="${db.initalSize}"/>
+    </bean>
+
+
+    <!--<bean id="dao1" class="dao.impl.StudentDaoImpl">-->
+        <!--<property name="dataSource" ref="mydatasource"/>-->
+    <!--</bean>-->
+    <!--<bean id="service1" class="service.impl.StudentServiceImpl">-->
+        <!--<property name="dao" ref="dao1"/>-->
+    <!--</bean>-->
+    <!--<bean id="controller1" class="controller.Controller">-->
+        <!--<property name="service" ref="service1"/>-->
+    <!--</bean>-->
+</beans>

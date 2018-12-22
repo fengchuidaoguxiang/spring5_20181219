@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dao1" class="domain.dao.impl.EmployeeDAOImpl"/>
+    <bean id="service1" class="domain.service.impl.EmployeeServiceImpl">
+        <property name="dao" ref="dao1"/>
+    </bean>
+
+    <!--配置一个事务增强的类-->
+    <bean id="myProxy" class="domain.proxy.MyProxy">
+        <property name="target" ref="service1"/>
+        <property name="transactionManager" ref="transactionManager1"/>
+    </bean>
+
+    <bean id="transactionManager1" class="domain.tx.TransactionManager"/>
+</beans>
