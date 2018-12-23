@@ -6,12 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import proxy.CommonsProxy2;
 import service.IEmployeeService;
-import sun.misc.ProxyGenerator;
-
-import javax.xml.transform.Source;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 
 @SpringJUnitConfig
 public class App {
@@ -34,9 +28,17 @@ public class App {
         myProxy2.update(new Employee());
     }
 
+    @Test
+    public void test3(){
+        IEmployeeService myProxye = proxyFactory.getProxyObject();
+        myProxye.delete(1L);
+    }
 
-//    @Test
-//    public void test3(){
-//        generateClassFile();
-//    }
+    @Test
+    public void test4(){
+        IEmployeeService service = proxyFactory.getProxyObject();
+        service.listAll();
+    }
+
+
 }

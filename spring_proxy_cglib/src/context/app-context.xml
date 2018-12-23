@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dao1" class="dao.impl.EmployeeDAOImpl"/>
+    <bean id="service1" class="service.impl.EmployeeServiceImpl">
+        <property name="dao" ref="dao1"/>
+    </bean>
+    <bean id="manager1" class="transaction.TransactionManager"/>
+    <!--配置一个动态代理类-->
+    <bean id="proxy1" class="proxy.CommonsProxy">
+        <property name="target" ref="service1"/>
+        <property name="manager" ref="manager1"/>
+    </bean>
+    
+</beans>

@@ -25,9 +25,6 @@ public class CommonsProxy2 implements InvocationHandler{
     //如何为真实对象的方法做增强的具体操作
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        if(method.getName().startsWith("get") || method.getName().startsWith("list")){
-            return method.invoke(target,args); //不做增强，直接放行
-        }
 //        System.out.println(proxy);//等价于System.out.println(proxy.toString());
         System.out.println(proxy.getClass());
         Object obj = null;

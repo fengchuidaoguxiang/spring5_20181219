@@ -3,12 +3,16 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Spring5_proxy_jdk/Spring5_proxy_jdk.iml" filepath="$PROJECT_DIR$/Spring5_proxy_jdk/Spring5_proxy_jdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring5_proxy_method_interceptor/Spring5_proxy_method_interceptor.iml" filepath="$PROJECT_DIR$/Spring5_proxy_method_interceptor/Spring5_proxy_method_interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/experment/experment.iml" filepath="$PROJECT_DIR$/experment/experment.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring5.iml" filepath="$PROJECT_DIR$/spring5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring5_aop_annotation/spring5_aop_annotation.iml" filepath="$PROJECT_DIR$/spring5_aop_annotation/spring5_aop_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring5_aop_xml/spring5_aop_xml.iml" filepath="$PROJECT_DIR$/spring5_aop_xml/spring5_aop_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_DI/spring_DI.iml" filepath="$PROJECT_DIR$/spring_DI/spring_DI.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_IoC/spring_IoC.iml" filepath="$PROJECT_DIR$/spring_IoC/spring_IoC.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_annotation/spring_annotation.iml" filepath="$PROJECT_DIR$/spring_annotation/spring_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_annotation_review/spring_annotation_review.iml" filepath="$PROJECT_DIR$/spring_annotation_review/spring_annotation_review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_proxy_cglib/spring_proxy_cglib.iml" filepath="$PROJECT_DIR$/spring_proxy_cglib/spring_proxy_cglib.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_jdk2/spring_proxy_jdk2.iml" filepath="$PROJECT_DIR$/spring_proxy_jdk2/spring_proxy_jdk2.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_principle/spring_proxy_principle.iml" filepath="$PROJECT_DIR$/spring_proxy_principle/spring_proxy_principle.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" filepath="$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" />
