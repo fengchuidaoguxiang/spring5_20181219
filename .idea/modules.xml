@@ -9,6 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/spring5_aop_annotation/spring5_aop_annotation.iml" filepath="$PROJECT_DIR$/spring5_aop_annotation/spring5_aop_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring5_aop_xml/spring5_aop_xml.iml" filepath="$PROJECT_DIR$/spring5_aop_xml/spring5_aop_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring5_jdbc/spring5_jdbc.iml" filepath="$PROJECT_DIR$/spring5_jdbc/spring5_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring5_tx_annotation/spring5_tx_annotation.iml" filepath="$PROJECT_DIR$/spring5_tx_annotation/spring5_tx_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring5_tx_javaconfig/spring5_tx_javaconfig.iml" filepath="$PROJECT_DIR$/spring5_tx_javaconfig/spring5_tx_javaconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring5_tx_xml/spring5_tx_xml.iml" filepath="$PROJECT_DIR$/spring5_tx_xml/spring5_tx_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_DI/spring_DI.iml" filepath="$PROJECT_DIR$/spring_DI/spring_DI.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_IoC/spring_IoC.iml" filepath="$PROJECT_DIR$/spring_IoC/spring_IoC.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_annotation/spring_annotation.iml" filepath="$PROJECT_DIR$/spring_annotation/spring_annotation.iml" />

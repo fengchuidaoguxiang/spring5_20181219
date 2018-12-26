@@ -16,8 +16,8 @@ public class Application {
     @Test
     public void testSave(){
         Employee employee = new Employee();
-        employee.setId(7);
-        employee.setName("乔峰");
+        employee.setId(9);
+        employee.setName("小鱼儿");
         employee.setAge(22);
         dao.save(employee);
     }
@@ -43,7 +43,6 @@ public class Application {
             System.out.println(temp);
         }
     }
-
     @Test
     public void testGet(){
         System.out.println(dao.get(1L));

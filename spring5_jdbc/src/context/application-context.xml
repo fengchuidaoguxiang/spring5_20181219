@@ -17,7 +17,7 @@
     </bean>
 
     <!--配置DAO-->
-    <bean id="dao1" class="dao.impl.EmployeeDAOImpl">
+    <bean id="dao1" class="dao.impl.EmployeeDAOImplByJdbcTemplate">
         <property name="dataSource" ref="datasource1"/>
     </bean>
 </beans>
