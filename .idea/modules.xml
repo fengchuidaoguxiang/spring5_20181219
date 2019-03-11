@@ -23,6 +23,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_principle/spring_proxy_principle.iml" filepath="$PROJECT_DIR$/spring_proxy_principle/spring_proxy_principle.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" filepath="$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_static2/spring_proxy_static2.iml" filepath="$PROJECT_DIR$/spring_proxy_static2/spring_proxy_static2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/try2_aop/try2_aop.iml" filepath="$PROJECT_DIR$/try2_aop/try2_aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/try2_tx/try2_tx.iml" filepath="$PROJECT_DIR$/try2_tx/try2_tx.iml" />
       <module fileurl="file://$PROJECT_DIR$/try_aop_annotation/try_aop_annotation.iml" filepath="$PROJECT_DIR$/try_aop_annotation/try_aop_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/try_aop_xml2/try_aop_xml.iml" filepath="$PROJECT_DIR$/try_aop_xml2/try_aop_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/try_tx_annotation/try_tx_annotation.iml" filepath="$PROJECT_DIR$/try_tx_annotation/try_tx_annotation.iml" />

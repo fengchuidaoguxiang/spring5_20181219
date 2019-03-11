@@ -23,26 +23,7 @@
         <property name="initialSize" value="${db.initialSize}"/>
     </bean>
     <context:component-scan base-package="com"/>
-
-    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="mydatasource"/>
     </bean>
-    <tx:advice id="txAdvice" transaction-manager="txManager">
-        <tx:attributes>
-            <tx:method name="trans" />
-        </tx:attributes>
-    </tx:advice>
-    <aop:config>
-        <aop:pointcut id="txPointCut" expression="execution(* com.service.*Service.trans(..))"/>
-        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
-    </aop:config>
-
-    <tx:advice>
-        <tx:attributes>
-            <tx:method name="get*" propagation="REQUIRED" read-only="true"/>
-            <tx:method name="list*" propagation="REQUIRED" read-only="true"/>
-            <tx:method name="query*" propagation="REQUIRED" read-only="true"/>
-            <tx:method name="*" propagation="REQUIRED"/>
-        </tx:attributes>
-    </tx:advice>
 </beans>
