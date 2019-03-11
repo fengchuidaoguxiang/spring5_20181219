@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+">
+    <context:component-scan base-package="com"/>
+    <!--AOP注解扫描器-->
+    <!--<aop:aspectj-autoproxy proxy-target-class="true"/>-->
+    <bean id="txManager" class="com.tx.TransactionManager"/>
+    <aop:config proxy-target-class="true">
+        <!--配置aop的切面-->
+        <aop:aspect ref="txManager">
+            <aop:pointcut id="txPointCut" expression="execution(* com.service.*Service.*(..))"/>
+            <!--<aop:before method="begin" pointcut="execution(* com.service.*Service.*(..))"/>-->
+            <aop:before method="begin" pointcut-ref="txPointCut"/>
+            <aop:after-returning method="commit" pointcut-ref="txPointCut"/>
+            <aop:after-throwing method="rollback" pointcut-ref="txPointCut" throwing="ex"/>
+            <aop:after method="close" pointcut-ref="txPointCut"/>
+            <!--<aop:around method="aroundMethod" pointcut-ref="txPointCut" />-->
+        </aop:aspect>
+    </aop:config>
+</beans>

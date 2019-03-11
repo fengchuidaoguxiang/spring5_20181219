@@ -45,7 +45,7 @@ public class Application {
     }
     @Test
     public void testGet(){
-        System.out.println(dao.get(1L));
+        System.out.println(dao.get(3));
     }
 
 }

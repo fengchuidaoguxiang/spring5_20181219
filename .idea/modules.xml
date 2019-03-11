@@ -16,11 +16,17 @@
       <module fileurl="file://$PROJECT_DIR$/spring_IoC/spring_IoC.iml" filepath="$PROJECT_DIR$/spring_IoC/spring_IoC.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_annotation/spring_annotation.iml" filepath="$PROJECT_DIR$/spring_annotation/spring_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_annotation_review/spring_annotation_review.iml" filepath="$PROJECT_DIR$/spring_annotation_review/spring_annotation_review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_my_practice/spring_my_practice.iml" filepath="$PROJECT_DIR$/spring_my_practice/spring_my_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_my_practice2/spring_my_practice2.iml" filepath="$PROJECT_DIR$/spring_my_practice2/spring_my_practice2.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_cglib/spring_proxy_cglib.iml" filepath="$PROJECT_DIR$/spring_proxy_cglib/spring_proxy_cglib.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_jdk2/spring_proxy_jdk2.iml" filepath="$PROJECT_DIR$/spring_proxy_jdk2/spring_proxy_jdk2.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_principle/spring_proxy_principle.iml" filepath="$PROJECT_DIR$/spring_proxy_principle/spring_proxy_principle.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" filepath="$PROJECT_DIR$/spring_proxy_static/spring_proxy_static.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy_static2/spring_proxy_static2.iml" filepath="$PROJECT_DIR$/spring_proxy_static2/spring_proxy_static2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/try_aop_annotation/try_aop_annotation.iml" filepath="$PROJECT_DIR$/try_aop_annotation/try_aop_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/try_aop_xml2/try_aop_xml.iml" filepath="$PROJECT_DIR$/try_aop_xml2/try_aop_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/try_tx_annotation/try_tx_annotation.iml" filepath="$PROJECT_DIR$/try_tx_annotation/try_tx_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/try_tx_xml/try_tx_xml.iml" filepath="$PROJECT_DIR$/try_tx_xml/try_tx_xml.iml" />
     </modules>
   </component>
 </project>
